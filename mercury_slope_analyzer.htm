@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury Slope Analyzer | Yiğit Abdullah Öcel</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <nav id="navbar">
+        <a href="mercurywebsite.htm" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="mercurywebsite.htm" class="logo">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\28040-3000x2025-desktop-hd-mercury-background-image.jpg" alt="YAÖ Logo">
+        </a>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <header class="product-hero">
+        <div class="product-hero-content">
+            <span class="badge">Java Swing & AWT Graphics</span>
+            <h1 class="product-title">Mercury Slope Analyzer</h1>
+            <p class="product-subtitle">A specialized desktop application designed for architects and engineers to calculate roof slopes, convert angles, and analyze rafter lengths with real-time visual precision.</p>
+            <div class="product-cta">
+                <a href="https://github.com/TC-Mercury/Mercury-Slope-Analyzer" class="btn"><i class="fab fa-github"></i> View Source on GitHub</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\Screenshots\Mercury Slope Analyzer.png" alt="Mercury Slope Analyzer Interface" class="product-main-img" style="border-radius: 15px; border: 1px solid #30363d;">
+        </div>
+    </header>
+
+    <!-- Product Features -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2>Analytical Features & Logic</h2>
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Dual Input System</h3>
+                    <p>Calculates roof slopes by seamlessly converting between Angle (Degrees) and Slope Percentage (%), ensuring flexibility for different engineering standards.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Dynamic Visual Analysis</h3>
+                    <p>Renders a real-time, scaled diagram of the roof slope utilizing the Java 2D API (Graphics2D, AffineTransform) with Advanced Anti-Aliasing.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-ruler-combined"></i>
+                    <h3>Rafter Segmentation Logic</h3>
+                    <p>Automatically analyzes a 10-meter span, dividing it into twenty 50cm segments to determine precise elevation at specific points.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Validation & Safety</h3>
+                    <p>Includes robust error handling for non-numeric inputs and strictly enforces a 0-45 degree logical constraint to prevent critical calculation errors.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>
+                    <strong>Language & Environment:</strong>
+                    <span>Java (Executable <code>.jar</code> packaging).</span>
+                </li>
+                <li>
+                    <strong>GUI Framework:</strong>
+                    <span>Java Swing (JFrame, JPanel) for a robust desktop interface.</span>
+                </li>
+                <li>
+                    <strong>Graphics Rendering:</strong>
+                    <span>Java AWT for real-time shape rendering and hardware-accelerated drawing operations.</span>
+                </li>
+                <li>
+                    <strong>Mathematical Core:</strong>
+                    <span>Advanced trigonometric algorithmic logic for precise, on-the-fly metric conversions and hypotenuse (Rafter Length) calculations.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yiğit Abdullah Öcel. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

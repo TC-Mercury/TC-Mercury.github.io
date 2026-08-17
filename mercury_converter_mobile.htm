@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury Converter (Mobile) | Yiğit Abdullah Öcel</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <nav id="navbar">
+        <a href="mercurywebsite.htm" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="mercurywebsite.htm" class="logo">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\28040-3000x2025-desktop-hd-mercury-background-image.jpg" alt="YAÖ Logo">
+        </a>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <header class="product-hero">
+        <div class="product-hero-content">
+            <span class="badge">Native Android & Java</span>
+            <h1 class="product-title">Mercury Converter</h1>
+            <p class="product-subtitle">A powerful, native Android application designed to bypass modern restrictions and convert media to MP3 directly on-device.</p>
+            <div class="product-cta">
+                <a href="https://github.com/TC-Mercury/MP3_Converter_for_Android" target="_blank" class="btn"><i class="fab fa-github"></i> View Source on GitHub</a>
+            </div>
+        </div>
+        <div class="mobile-screens-container" style="display: flex; justify-content: center; gap: 30px; margin-top: 50px;">
+            <div>
+                <img src="https://github.com/user-attachments/assets/26123d9e-00cc-4cf0-a1e3-f6dfa0648abc" alt="Light Mode Interface" class="product-main-img" style="width: 280px; margin-top: 0; border-radius: 30px; border: 4px solid #30363d;">
+                <p style="margin-top: 15px; font-weight: bold; color: #8b949e;">Light Mode</p>
+            </div>
+            <div>
+                <img src="https://github.com/user-attachments/assets/f72c6e8f-ea04-4a54-99e3-72db96892309" alt="Dark Mode Interface" class="product-main-img" style="width: 280px; margin-top: 0; border-radius: 30px; border: 4px solid #30363d;">
+                <p style="margin-top: 15px; font-weight: bold; color: #8b949e;">Dark Mode</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Features -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2>Core Features & Engineering</h2>
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-share-nodes"></i>
+                    <h3>Native Share Integration</h3>
+                    <p>Deep integration with Android's Share Sheet (ACTION_SEND). Custom Regex strips away unnecessary text from shared payloads to ensure a 100% clean URL.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Anti-Bot Bypass</h3>
+                    <p>Utilizes yt-dlp nightly builds and client emulation (android_testsuite) to successfully bypass modern PO Token and HTTP 403 restrictions.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-file-audio"></i>
+                    <h3>On-Device FFmpeg</h3>
+                    <p>Implements manual detective logic to locate the libffmpeg.so binary across various system directories, preventing architecture-specific crashes.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-database"></i>
+                    <h3>SQLite Download History</h3>
+                    <p>Securely logs past downloads in a local SQLite database, accessible via a sleek Bottom Sheet UI with Smart Auto-Paste functionality.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>
+                    <strong>Language & Platform:</strong>
+                    <span>Java, Native Android SDK</span>
+                </li>
+                <li>
+                    <strong>Core Engines:</strong>
+                    <span>yt-dlp (Nightly), FFmpeg-Android</span>
+                </li>
+                <li>
+                    <strong>Storage Handling:</strong>
+                    <span>Scoped Storage compliant (Android 11+), automatically organizes files by writing them directly to the <code>Downloads/MercuryFile</code> directory.</span>
+                </li>
+                <li>
+                    <strong>UI / UX:</strong>
+                    <span>Dynamic Dark/Light Mode support with custom "Mercury" color palette.</span>
+                </li>
+                <li>
+                    <strong>Optimization (APK Size):</strong>
+                    <span>Excluded x86 (Emulator) architecture via ABI Filtering to reduce production APK size from ~300MB to ~150MB.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yiğit Abdullah Öcel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

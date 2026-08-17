@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercuryTank | Yiğit Abdullah Öcel</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <nav id="navbar">
+        <a href="mercurywebsite.htm" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="mercurywebsite.htm" class="logo">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\28040-3000x2025-desktop-hd-mercury-background-image.jpg" alt="YAÖ Logo">
+        </a>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <header class="product-hero">
+        <div class="product-hero-content">
+            <span class="badge">Arduino & Embedded C/C++</span>
+            <h1 class="product-title">MercuryTank</h1>
+            <p class="product-subtitle">Smart Tank Level & Volume Monitoring System. Built with advanced signal processing and precise geometric modeling for horizontal cylindrical tanks.</p>
+            <div class="product-cta">
+                <a href="https://github.com/TC-Mercury/MercuryTank" class="btn"><i class="fab fa-github"></i> View Source on GitHub</a>
+            </div>
+        </div>
+        <div style="margin-top: 50px;">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\WhatsApp Image 2026-08-17 at 15.02.25.jpeg" alt="MercuryTank Hardware Setup" class="product-main-img" style="border-radius: 15px; border: 1px solid #30363d;">
+        </div>
+    </header>
+
+    <!-- Product Features -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2>System Architecture & Features</h2>
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-wave-square"></i>
+                    <h3>Advanced Signal Processing</h3>
+                    <p>Eliminates sensor noise via a 7-sample Median Filter and dampens liquid surface ripples using an Exponential Moving Average (EMA) algorithm.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Precise Geometric Modeling</h3>
+                    <p>Calculates exact, non-linear volume in horizontal cylinders using the circular segment area formula: <br><br> <code style="color: var(--accent-color); font-size: 0.9rem;">Area = R&sup2; &middot; cos&sp;&sup1;((R-h)/R) - (R-h)&radic;(2Rh-h&sup2;)</code></p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Robust Error Handling</h3>
+                    <p>Employs custom <code>clampf</code> and <code>maxf</code> functions to filter out-of-bounds ultrasonic readings, preventing mathematical errors and system crashes.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Real-Time UI & Configuration</h3>
+                    <p>Provides live monitoring of height (cm) and fill percentage (%) via an I2C 16x2 LCD display, with easily configurable tank dimensions in the source code.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>
+                    <strong>Hardware Requirements:</strong>
+                    <span>Arduino Uno / Nano / Mega, HC-SR04 Ultrasonic Distance Sensor, 16x2 I2C LCD Display.</span>
+                </li>
+                <li>
+                    <strong>Pin Mapping:</strong>
+                    <span><code>Trig &rarr; Pin 9</code> | <code>Echo &rarr; Pin 8</code> | <code>LCD SDA &rarr; A4</code> | <code>LCD SCL &rarr; A5</code></span>
+                </li>
+                <li>
+                    <strong>Signal Smoothing:</strong>
+                    <span>EMA Alpha constant set to <code>0.28</code> for optimized balance between responsiveness and stability.</span>
+                </li>
+                <li>
+                    <strong>Target Application:</strong>
+                    <span>Designed specifically for horizontal cylindrical tanks where volume changes non-linearly with liquid height.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yiğit Abdullah Öcel. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

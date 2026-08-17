@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercuryMusic | Yiğit Abdullah Öcel</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <nav id="navbar">
+        <a href="mercurywebsite.htm" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="mercurywebsite.htm" class="logo">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\28040-3000x2025-desktop-hd-mercury-background-image.jpg" alt="YAÖ Logo">
+        </a>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <header class="product-hero">
+        <div class="product-hero-content">
+            <span class="badge">Java & Android Studio</span>
+            <h1 class="product-title">MercuryMusic</h1>
+            <p class="product-subtitle">A robust, efficient, and highly responsive local music player for Android. Built with a persistent Mini Player and smooth custom animations.</p>
+            <div class="product-cta">
+                <a href="https://github.com/TC-Mercury/Mercury-Music" class="btn"><i class="fab fa-github"></i> View Source on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Mobile Screens Container (List, Player, Mini Player) -->
+        <div class="mobile-screens-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 50px;">
+            <div>
+                <img src="C:\Users\ocely\OneDrive\Obrazy\Screenshots\WhatsApp Image 2026-08-17 at 15.24.35.jpeg" alt="Song List Interface" class="product-main-img" style="width: 240px; margin-top: 0; border-radius: 20px; border: 4px solid #30363d;">
+                <p style="margin-top: 15px; font-weight: bold; color: #8b949e; font-size: 0.9rem;">Song List</p>
+            </div>
+            <div>
+                <img src="C:\Users\ocely\OneDrive\Obrazy\Screenshots\WhatsApp Image 2026-08-17 at 15.24.35 (1).jpeg" alt="Main Player Interface" class="product-main-img" style="width: 240px; margin-top: 0; border-radius: 20px; border: 4px solid #30363d;">
+                <p style="margin-top: 15px; font-weight: bold; color: #8b949e; font-size: 0.9rem;">Player Interface</p>
+            </div>
+            <div>
+                <img src="C:\Users\ocely\OneDrive\Obrazy\Screenshots\WhatsApp Image 2026-08-17 at 15.24.35 (2).jpeg" alt="Mini Player Interface" class="product-main-img" style="width: 240px; margin-top: 0; border-radius: 20px; border: 4px solid #30363d;">
+                <p style="margin-top: 15px; font-weight: bold; color: #8b949e; font-size: 0.9rem;">Mini Player</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Features -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2>Core Features & UX</h2>
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-database"></i>
+                    <h3>Smart Media Retrieval</h3>
+                    <p>Utilizes Android's native MediaStore API to efficiently scan, index, and list audio files directly from the device's internal storage.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Singleton State Management</h3>
+                    <p>Maintains flawless playback state across different activities and a persistent Mini Player using a robust Singleton Pattern architecture.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Dynamic & Responsive UI</h3>
+                    <p>Engineered with ConstraintLayout to ensure a consistent, fragmentation-free experience across various aspect ratios and screen sizes.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-images"></i>
+                    <h3>Album Art & Animations</h3>
+                    <p>Features seamless image loading and caching via the Glide library, paired with custom scale animations for interactive play/pause controls.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Specifications & Roadmap</h2>
+            <ul class="specs-list">
+                <li>
+                    <strong>Tech Stack:</strong>
+                    <span>Java, Android Studio Narwhal</span>
+                </li>
+                <li>
+                    <strong>Architecture:</strong>
+                    <span>MVC Pattern combined with a Singleton State Manager for global media control.</span>
+                </li>
+                <li>
+                    <strong>Key Libraries:</strong>
+                    <span><code>Glide</code> (Image Processing), <code>ConstraintLayout</code> (Responsive UI), and <code>RecyclerView</code> (Efficient Listing).</span>
+                </li>
+                <li>
+                    <strong>Development Roadmap:</strong>
+                    <span>Planned features include Foreground Services for background playback, System Notification Controls, SQLite-based Favorites, and intelligent Search functionality.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yiğit Abdullah Öcel. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

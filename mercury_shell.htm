@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercuryShell | Yiğit Abdullah Öcel</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <nav id="navbar">
+        <a href="mercurywebsite.htm" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <a href="mercurywebsite.htm" class="logo">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\28040-3000x2025-desktop-hd-mercury-background-image.jpg" alt="YAÖ Logo">
+        </a>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <header class="product-hero">
+        <div class="product-hero-content">
+            <span class="badge">C & Native Windows API</span>
+            <h1 class="product-title">MercuryShell</h1>
+            <p class="product-subtitle">The Refactoring Journey. A high-performance CLI simulation showcasing the evolution from a basic functional prototype to a professional, data-driven architecture.</p>
+            <div class="product-cta">
+                <a href="https://github.com/TC-Mercury/MercuryShell" class="btn"><i class="fab fa-github"></i> View Source on GitHub</a>
+            </div>
+        </div>
+        <div style="margin-top: 50px;">
+            <img src="C:\Users\ocely\OneDrive\Obrazy\Screenshots\Screenshot 2026-08-17 152130.png" alt="MercuryShell CLI Interface" class="product-main-img" style="border-radius: 15px; border: 1px solid #30363d;">
+        </div>
+    </header>
+
+    <!-- Product Features -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2>Engineering Highlights (v2.0)</h2>
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Function Pointer Dispatch Table</h3>
+                    <p>Eliminated monolithic if-else blocks. By implementing a Command structure and a function pointer array, achieved seamless O(1)/O(n) command lookup complexity.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-folder-tree"></i>
+                    <h3>Recursive Directory Search</h3>
+                    <p>Utilizes the WIN32_FIND_DATAA structure to deeply traverse the Windows file system, providing powerful and fast search capabilities across the entire directory tree.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-spell-check"></i>
+                    <h3>Fuzzy Matching (Levenshtein)</h3>
+                    <p>Enhanced UX by integrating the Levenshtein Distance algorithm. Analyzes typos (e.g., "helpp") and calculates distance to suggest an intelligent "Did you mean?" prompt.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-file-code"></i>
+                    <h3>Advanced File Support</h3>
+                    <p>Upgraded file handling capabilities to support not only plain text (ASCII) but also complex binary file reading and Hex Dump formatting.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications (v1.0 vs v2.0) -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Evolution (v1.0 &rarr; v2.0)</h2>
+            <ul class="specs-list">
+                <li>
+                    <strong>Command Processing:</strong>
+                    <span>Transitioned from basic procedural <em>if-else logic</em> to a highly scalable <em>Function Pointer Dispatch Table</em>.</span>
+                </li>
+                <li>
+                    <strong>Architecture:</strong>
+                    <span>Moved beyond "code that just works" by refactoring a monolithic structure into a clean, modular, and data-driven design.</span>
+                </li>
+                <li>
+                    <strong>Error Handling:</strong>
+                    <span>Upgraded from static error messages to dynamic, Levenshtein-based fuzzy matching for intelligent auto-correction.</span>
+                </li>
+                <li>
+                    <strong>File Searching:</strong>
+                    <span>Evolved from simple directory listing to a recursive, deep-level search engine fully integrated with Native Windows API.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yiğit Abdullah Öcel. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
